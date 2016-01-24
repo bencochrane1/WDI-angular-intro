@@ -17,14 +17,6 @@ $ gulp serve
 * Lodash
 * Google Places API
 
-
-Readmes, how to use them in your own application can be found here:
-
-* plugins/dropbox/README.md
-* plugins/github/README.md
-* plugins/googledrive/README.md
-* plugins/onedrive/README.md
-
 ### Mock Data Source:
 
 http://private-a2115-wdi.apiary-mock.com/results
