@@ -1,8 +1,8 @@
 # WDI Intro to Angular
 
-This a sample app made with Angular using $http to call out to Apiary for some mock data.
+This is a sample app that allows the user to enter search data, be taken to a search results page and then show individual search results on a third page. It uses $http to call out to Apiary for mock data.
 
-### To get up and running:
+### To view the completed tutorial:
 
 ```sh
 $ git clone [this-git-repo-url]
