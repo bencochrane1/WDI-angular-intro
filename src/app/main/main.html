@@ -1,0 +1,72 @@
+<div class="flex-row nav-hero">
+  <div class="flex-column nav-hero-column">
+    <div class="flex-row">
+
+      <div class="flex-row flex-grow nav-header">
+        <div class="flex-row flex-grow">
+          <div class="logo-home-container"><span class="logo-text-white">equipmate</span></div>
+        </div>
+        <div class="flex-row nav-objects">
+
+          <div class="flex-column">
+            <div class="flex-row flex-justify-center">
+              <div class="home-host-button"><span>Rent your equipment</span></div>
+            </div>
+          </div>
+
+          <div class="flex-column">
+            <div class="flex-row">
+              <div class="flex-column nav-title">Messages</div>
+              <div class="flex-column"><i class="nav-icon ion-ios-chatboxes-outline"></i></div>
+            </div>
+          </div>
+
+          <div class="flex-column">
+            <div class="flex-row">
+              <div class="flex-column nav-title">Help</div>
+              <div class="flex-column"><i class="nav-icon ion-help-buoy"></i></div>
+            </div>
+          </div>
+
+          <div class="flex-column">
+            <div class="flex-row">
+              <div class="flex-column nav-title">Ben</div>
+              <div class="flex-column"><i class="nav-icon ion-person"></i></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-row flex-justify-center middle-container">
+
+      <div class="flex-column">
+        <div class="flex-row flex-justify-center nav-welcome">equipment hire - real simple</div>
+        <div class="flex-row flex-justify-center nav-rental">Hire from verified local equipment suppliers.</div>
+        <div class="flex-row flex-justify-center nav-middle-button">
+          <div class="home-hero-button">how it works</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex-row flex-justify-center date-container" ng-class="{ 'errors' : main.searchErrors }">
+        <div>
+            <p class="input-group" id="locationField" >
+              <input ng-focus="main.searchErrors = false" id="autocomplete" g-places-autocomplete ng-model="main.searchLocation" placeholder="I'm located in..." type="text" class="form-control location-search-input" />
+            </p>
+        </div>
+
+        <div>
+          <select ng-focus="main.searchErrors = false" ng-options="category.value as category.name for category in main.categories" ng-model="main.category">
+              <option value="">I want to hire...</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="home-search-button" ng-click="main.search()">search</div>
+        </div>
+    </div>
+  </div>
+</div>

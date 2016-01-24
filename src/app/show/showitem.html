@@ -1,0 +1,59 @@
+<div class="flex-column flex-grow">
+  <div class="flex-row search-nav-row">
+    <div class="flex-row search-logo search-nav-item" ui-sref="home">
+      <div class="search-nav-inner">
+        <img class="logo-results">
+      </div>
+    </div>
+    <div class="flex-row flex-grow search-nav-input">
+      <input class="search-input" type="text" placeholder="Search equipment">
+    </div>
+    <div class="flex-row search-nav-item">
+      <span>List your equipment</span>
+      <i class="ion-android-bus"></i>
+    </div>
+    <div class="flex-row search-nav-item">
+      <span>messages</span>
+      <i class="ion-ios-chatboxes-outline"></i>
+    </div>
+    <div class="flex-row search-nav-item">
+      <span>help</span>
+      <i class="ion-help-buoy"></i>
+    </div>
+    <div class="flex-row search-nav-item">
+      <span>ben</span>
+      <i class="ion-person"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="flex-row main-results-section flex-justify-center">
+  <div>
+    <div class="home-search-button" ui-sref="searchResults">Back to Results</div>
+  </div>
+  <div class="flex-row search-inner-main-container">
+    <div class="flex-column flex-grow">
+      <div class="flex-row filter-row-container">
+        <div class="flex-row flex-grow filter-inner">
+          <div class="flex-row flex-grow search-dates-header">Details</div>
+          <div class="flex-row flex-grow flex-justify-right search-check-in">
+            <div>
+              <p class="input-group">{{ item.details.name }}</p>
+            </div>
+          </div>
+          <div class="flex-row flex-grow">
+            <div>
+                <p class="input-group">Id: {{ item.details.id }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-column flex-grow">
+          <div class="flex-row result-image-show" ng-style="{'background-image':'url({{item.details.image}})'}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
